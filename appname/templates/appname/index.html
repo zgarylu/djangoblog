@@ -1,0 +1,56 @@
+{% extends "layout.html" %} {% block title %} Home {% endblock %} {% block content %}
+
+<div class="p-5 mb-4 bg-body-tertiary rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-4 fw-bold">Welcome to My Django Appname Page</h1>
+
+    <p class="lead">A modern Django application built with Python, Django, and Bootstrap 5.</p>
+
+    <p>
+      This is the home page of the <strong>appname</strong>
+      application. Explore the features and learn how Django handles URLs, views, templates, and authentication.
+    </p>
+
+    <a href="/appname/secret" class="btn btn-primary btn-lg">Secret Page</a>
+  </div>
+</div>
+
+<div class="row text-center mt-5">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h2 class="display-6">🚀</h2>
+
+        <h4>Fast Development</h4>
+
+        <p>Django provides powerful tools to build web applications quickly and efficiently.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h2 class="display-6">🔐</h2>
+
+        <h4>Secure</h4>
+
+        <p>Built-in authentication, security features, and user management.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h2 class="display-6">📦</h2>
+
+        <h4>Extensible</h4>
+
+        <p>Add apps, models, APIs, and integrations as your project grows.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

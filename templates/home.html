@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<div class="p-5 mb-4 bg-body-tertiary rounded-3">
+
+    <div class="container-fluid py-5">
+
+        <h1 class="display-4 fw-bold">
+            Welcome to Django Blog
+        </h1>
+
+        <p class="lead">
+            A modern Django application using Bootstrap 5.
+        </p>
+
+        <a href="/about" class="btn btn-primary btn-lg">
+            Learn More
+        </a>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body">
+
+                <h4>Blog</h4>
+
+                <p>
+                    Read the latest articles.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body">
+
+                <h4>Users</h4>
+
+                <p>
+                    Register and manage your profile.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body">
+
+                <h4>Projects</h4>
+
+                <p>
+                    Build modern Django applications.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
