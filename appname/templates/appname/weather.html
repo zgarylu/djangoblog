@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="{% static 'appname/bootstrap-5.3.8-dist/css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      #content {max-width: 700px; margin: 50px auto;}
+
+      .todo-completed {
+        text-decoration: line-through;
+        color: #6c757d;
+        background-color: #f1f3f5;
+      }
+
+      .action-buttons {
+        margin-top: 20px;
+      }
+
+      .todo-list {
+        margin-top: 30px;
+      }
+
+      footer {
+        margin-top: 60px;
+        padding: 20px 0;
+        color: #6c757d;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <div id="content">
+            <!-- {% for item in data %}
+                <p>
+                    <strong>{{ item.key }}</strong>: {{ item.value }}
+                </p>
+            {% endfor %} -->
+            {% for key, value in data.items %}
+                <p>
+                    <strong>{{ key }}</strong> : {{ value }}
+                </p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
